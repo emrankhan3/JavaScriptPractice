@@ -11,3 +11,13 @@ callBack function is a Osthir function which receive a function as parameter and
 we can plug any function as we like.
 
 */
+
+
+
+// another example
+const f = (a,ff)=>{
+    return ff(a)
+}
+
+console.log(f(6,(x)=>x<<=1))
+
