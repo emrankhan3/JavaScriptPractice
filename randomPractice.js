@@ -49,4 +49,27 @@ sss
   sot()
   
 </script>  -->
+<!--  practicing js string methods -->
+<!-- <p id='id'></p>
 
+
+<script>
+
+  sot = function(){
+    let element = document.getElementById('id');
+    aa = "this is the osthir string   "
+    // aa = aa.split("")
+    mainString = `this is the string, ${aa} ${4+4+'e'} 
+      <h2 style="color:#f1356d">Bismillah</h2>
+      
+    `
+   
+    aa[0]='d';
+    //st="";
+    aa = aa.toString(",")
+    // for(int i=0; i<aa)
+    element.innerHTML = mainString;
+  }
+  sot()
+  
+</script>  -->
