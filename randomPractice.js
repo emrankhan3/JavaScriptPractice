@@ -73,3 +73,62 @@ sss
   sot()
   
 </script>  -->
+<!-- <!--  practicing js string methods -->
+<!-- <p id='id'></p>
+
+<p id='ar'  style="color:#f1356d" ></p>
+
+<button onclick=fun1()>Sort Normally</button>
+
+<button onclick=fun2()>Sort Reverse</button>
+
+<script>
+  txt = `<h2 style="color:#f1356d">Bismillah</h2>`;
+  document.getElementById('id').innerHTML = txt;
+  arr = [3,4,2,12,3,23,13,54,213,3,4,25,23,4,234]
+  const cars = [
+    {'name' :'toyota','year' : '2021'},
+    {'name' :'mer','year' : '2010'},
+    {'name' :'vols','year' : '1991'},
+    {'name' :'muta','year' : '2201'},
+    {'name' :'akomo','year' : '2051'}
+  ]
+  txt = "";
+  for(i=0; i<cars.length;i++){
+    txt+=cars[i].name+" "+cars[i].year+"<br>";
+  }
+  
+  
+  document.getElementById('ar').innerHTML=txt;
+  
+  
+  
+
+    
+  const fun1=()=>{
+    cars.sort(function(a,b){return a.year-b.year})
+    txt="" 
+    for(i=0; i<cars.length;i++){
+    txt+=cars[i].name+" "+cars[i].year+"<br>";
+  }
+     document.getElementById('ar').innerHTML=txt;
+    
+  }
+  
+  
+  const fun2=()=>{
+    cars.sort(function(a,b){
+      x = a.name.toLowerCase();
+      y = b.name.toLowerCase();
+      if(x<y){return -1;}
+      if(x>y){return 1;}
+      return 0;
+       
+    });
+    txt="" 
+    for(i=0; i<cars.length;i++){
+    txt+=cars[i].name+" "+cars[i].year+"<br>";
+    }
+     document.getElementById('ar').innerHTML=txt;
+  }
+</script>   -->
