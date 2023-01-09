@@ -172,3 +172,26 @@ sss
   document.getElementById('dv').innerHTML=txt;
   
 </script> -->
+
+<!--Array Iteration   -->
+<p id='id'> </p>
+
+<div id='dv'>
+</div>
+<script>
+  document.getElementById('id').innerHTML = 'Bismillah</br>';
+  arr = [
+    {name:'emran',act:"programmer"},
+    {name:'shahadat',act:"programmer"},
+    {name:'sayed',act:"assistant engineer"},
+    {name:'anamul',act:"bcs"},
+    {name:'monir',act:"bcs"}
+  ]
+  
+  txt =""
+  for(it of arr){
+    txt+=`name: ${it.name}, act: ${it.act}</br>`
+  }
+  document.getElementById('dv').innerHTML=txt;
+  
+</script>
