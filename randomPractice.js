@@ -132,3 +132,23 @@ sss
      document.getElementById('ar').innerHTML=txt;
   }
 </script>   -->
+
+<!--Array Iteration   -->
+====================================================
+<!-- <p id='id'> </p>
+
+<div id='dv'>
+</div>
+<script>
+  document.getElementById('id').innerHTML = 'Bismillah</br>';
+  arr = [2,3,5,7,11,13,17]
+  
+  txt =""
+  arr.forEach((ind,val,a)=>{
+    txt+= ind*3*7*11*13;
+    txt+='</br>'
+    
+  })
+  document.getElementById('dv').innerHTML=txt;
+  
+</script> -->
