@@ -33,6 +33,26 @@ sss
   
 </script>  -->
 
+<p id='id'> </p>
+
+<div id='dv'>
+</div>
+<script>
+  document.getElementById('id').innerHTML = 'Bismillah</br>';
+  arr = [2,3,5,7,11,13,17]
+  
+  txt =""
+  ko = arr.filter((ind,val,a)=>{
+    txt+= ind*3*7*11*13;
+    txt+='</br>'
+   
+    return ind%10==7
+  })
+  console.log(ko)
+  document.getElementById('dv').innerHTML=txt;
+  
+</script>
+
 
 <!--  practicing js string methods -->
 ===========================================
