@@ -195,3 +195,18 @@ sss
   document.getElementById('dv').innerHTML=txt;
   
 </script>
+<!--Array Iteration   -->
+<p id='id'> </p>
+
+<div id='dv'>
+</div>
+<script>
+  document.getElementById('id').innerHTML = 'Bismillah</br>';
+  arr = [1,9,9,2,3,4,5,5,6,7,8]
+  
+  txt = "";
+  txt+=arr.map((v)=>v*2+'</br>')
+  console.log(txt)
+  document.getElementById('dv').innerHTML=txt;
+  
+</script>
