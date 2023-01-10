@@ -210,3 +210,25 @@ sss
   document.getElementById('dv').innerHTML=txt;
   
 </script>
+
+<!--Array Iteration   -->
+<p id='id'> </p>
+<div class="th"> this is the javascirpt practice file</div>
+<div id='dv'>
+</div>
+<script>
+  document.getElementById('id').innerHTML = 'Bismillah</br>';
+   const prime = (v)=>{
+     if (v==1)return false;
+     for(let i=2; i*i<=v; i++){
+       if(v%i==0)return false;
+     }
+     return true;
+   }
+  arr = [1,2,3,4,5,6,7,8,9,10]
+  txt=""
+  v = arr.filter((val)=>{return prime(val)})
+  for(vals of v)txt+=`${vals}</br>`
+  document.getElementById('id').innerHTML = txt
+  
+</script>
