@@ -232,3 +232,36 @@ sss
   document.getElementById('id').innerHTML = txt
   
 </script>
+
+//==========================prime number and their binary representation============
+document.getElementById('id').innerHTML = "hello"
+const reverseStr = (s)=>{
+  txt = "";
+  for(i = s.length-1; i>-1; i--)txt+=s[i];
+  return txt;
+}
+const binaryRepresentation = (n)=>{
+  txt = "";
+  while(n>0){
+    txt+=(n&1);
+    n>>=1;
+  }
+  return reverseStr(txt);
+}
+const boom = ()=>{  
+  let val = document.getElementById('ip').value;
+  txt = ""
+  const arr = [];
+  for(i=0; i<=val; i++)arr[i]=1;
+  
+  for(let i=2; i<=val; i++){
+    if(arr[i]==1){
+      
+      txt+=`${i}:    ${binaryRepresentation(i)}</br>`
+      for(j=i+i; j<=val; j+=i){
+         arr[j]=0;
+      } 
+    }
+  }
+  document.getElementById('dv').innerHTML=txt
+}
