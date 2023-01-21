@@ -265,3 +265,11 @@ const boom = ()=>{
   }
   document.getElementById('dv').innerHTML=txt
 }
+
+///// button - query selector 
+  document.querySelectorAll('button').forEach((button)=>{
+    button.onclick = ()=>{
+      document.querySelector('#head').style.color=button.dataset.c
+    }
+  })
+////////////////////////
